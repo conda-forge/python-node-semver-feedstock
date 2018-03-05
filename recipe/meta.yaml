@@ -1,6 +1,6 @@
 {% set name = "node-semver" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "c32bfc976fd9e003c4a15665e5fe9f337366ba6b60aeb34e4479da9d7bbb0081" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "d8a3906e7677f8ab05aeb3fc94c7a2fa163def5507271452ce6831282f23f1cb" %}
 
 package:
   name: 'python-{{ name|lower }}'
