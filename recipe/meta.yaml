@@ -3,8 +3,8 @@
 {% set sha256 = "43fd99c51110202db78865dddc6b428d1e6829d3da7fac89fe6902d0836695ea" %}
 
 package:
-  name: 'python-{{ name|lower }}'
-  version: '{{ version }}'
+  name: python-{{ name|lower }}
+  version: {{ version }}
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
@@ -14,12 +14,12 @@ source:
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
