@@ -115,5 +115,4 @@ Feedstock Maintainers
 
 * [@abloemert](https://github.com/abloemert/)
 * [@windelbouwman](https://github.com/windelbouwman/)
-* [@windelbouwmanbosch](https://github.com/windelbouwmanbosch/)
 
