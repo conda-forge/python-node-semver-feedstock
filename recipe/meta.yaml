@@ -3,8 +3,8 @@
 {% set sha256 = "c7afc1eb3cf098f90fdf9059167c0b314d6717a3216bd5bd6c1676bb7bbe279c" %}
 
 package:
-  name: 'python-{{ name|lower }}'
-  version: '{{ version }}'
+  name: python-{{ name|lower }}
+  version: {{ version }}
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
@@ -14,12 +14,12 @@ source:
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
@@ -38,5 +38,4 @@ about:
 extra:
   recipe-maintainers:
     - windelbouwman
-    - windelbouwmanbosch
     - abloemert
