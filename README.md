@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About python-node-semver
 ========================
 
@@ -18,8 +14,15 @@ Summary: port of node-semver
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/python-node-semver-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/python-node-semver-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5729&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-node-semver-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
