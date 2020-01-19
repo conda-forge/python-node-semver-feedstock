@@ -1,6 +1,6 @@
 {% set name = "node-semver" %}
 {% set version = "0.8.0" %}
-{% set sha256 = "c6b187ed1f33c844fee130d8bf56879e9dcf17b58af6366fb21068d782e4fa31" %}
+{% set sha256 = "f638c8f53b67c4efc6f3925c312ef19925b3660eb9ab138a85cb91148c9b63f1" %}
 
 package:
   name: python-{{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://github.com/podhmo/python-semver/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
