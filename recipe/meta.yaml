@@ -25,7 +25,7 @@ requirements:
 
 test:
   imports:
-    - semver
+    - nodesemver
 
 about:
   home: https://github.com/podhmo/python-semver
